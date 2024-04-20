@@ -1,0 +1,146 @@
+/* General body, margins, and padding settings */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #007bff; /* Blue background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+  display: flex; /* Use flexbox to arrange children */
+  justify-content: space-between; /* Evenly distribute content across the navbar */
+  align-items: center; /* Vertically center the items */
+  padding: 0 1rem; /* Padding on the sides for some space */
+  flex: 1; /* Allows the nav to take up as much space as possible */
+}
+
+/* Was initially doing flexbox/grid stuff, decided to prioritize features for sake of time */
+.nav-link {
+  color: #fff !important; /* Keeping the color the same before and after clicks */
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.navbar-brand {
+  color: #fff !important; /* Keeping the color the same before and after clicks */
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* Container styling for consistent padding */
+.container {
+  padding: 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Form styling */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  display: block;
+  width: fill;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Button styling */
+.button, .btn {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+/* Containers on the task pages */
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Task specific styles */
+.task-item {
+  border: 1px solid #dee2e6; /* Bootstrap's border color */
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-item:hover {
+  background-color: #f8f9fa; /* Bootstrap's light hover color */
+}
+
+/* Styles used for the priority indicator */
+.priority-high {
+  color: red;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.priority-low {
+  color: green;
+  font-weight: bold;
+}
+
+.button-completed {
+  background-color: #28a745; /* Bootstrap success color */
+  color: white;
+}
+
+.button-not-completed {
+  background-color: #6c757d; /* Bootstrap secondary color */
+  color: white;
+}
